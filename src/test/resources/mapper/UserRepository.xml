@@ -4,7 +4,7 @@
 
 <mapper namespace="com.mario6.springdata.jpa.mybatis.repository.demo.repository.UserRepository">
 
-    <select id="selectByAccount" resultType="com.mario6.springdata.jpa.mybatis.repository.demo.domain.User">
-        select * from user where account = #{account}
-    </select>
+    <insert id="insert" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into user(name, account, password) values(#{name}, #{account}, #{password})
+    </insert>
 </mapper>
