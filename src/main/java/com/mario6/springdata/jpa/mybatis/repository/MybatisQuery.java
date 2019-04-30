@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * 标记方法由mybatis执行方法
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ ElementType.METHOD })
+@Target({ElementType.METHOD})
 @QueryAnnotation
 @Documented
 public @interface MybatisQuery {

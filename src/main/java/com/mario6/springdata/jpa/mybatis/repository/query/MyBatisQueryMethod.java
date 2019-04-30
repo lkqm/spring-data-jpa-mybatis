@@ -6,30 +6,30 @@ import org.springframework.data.repository.query.QueryMethod;
 
 import java.lang.reflect.Method;
 
+/**
+ * 查询方法的抽象
+ */
 public class MyBatisQueryMethod extends QueryMethod {
-	
-	private final Class<?> mapperInterface;
-	private final Method method;
 
-	public MyBatisQueryMethod(Method method, RepositoryMetadata metadata, ProjectionFactory factory) {
-		super(method, metadata, factory);
-		this.method = method;
-		mapperInterface = metadata.getRepositoryInterface();
-	}
+    private final Class<?> mapperInterface;
+    private final Method method;
 
-	public Class<?> getRepositoryInterface() {
-		return mapperInterface;
-	}
+    public MyBatisQueryMethod(Method method, RepositoryMetadata metadata, ProjectionFactory factory) {
+        super(method, metadata, factory);
+        this.method = method;
+        mapperInterface = metadata.getRepositoryInterface();
+    }
 
-	public Method getMethod() {
-		return method;
-	}
+    public Class<?> getRepositoryInterface() {
+        return mapperInterface;
+    }
 
-	public String getNamedQueryName() {
-		return null;
-	}
+    public Method getMethod() {
+        return method;
+    }
 
-	public String getMybatisStatementId() {
-		return mapperInterface.getName() + "." + method.getName();
-	}
+    public String getNamedQueryName() {
+        return null;
+    }
+
 }

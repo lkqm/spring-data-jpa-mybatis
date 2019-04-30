@@ -11,7 +11,7 @@ import org.springframework.data.repository.CrudRepository;
 public interface UserRepository extends CrudRepository<User, Integer> {
 
     @MybatisQuery
-    @Select("select * from user where account = #{account}")
+    @Select("select * from user where account = #{account} limit 1")
     User selectByAccount(String account);
 
     @MybatisQuery

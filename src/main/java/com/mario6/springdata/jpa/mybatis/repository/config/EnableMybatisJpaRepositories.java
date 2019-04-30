@@ -41,10 +41,10 @@ import java.lang.annotation.*;
 public @interface EnableMybatisJpaRepositories {
 
 
-	//-------------jpa-mybatis---------------//
-	Class<?> repositoryFactoryBeanClass() default MybatisJpaRepositoryFactoryBean.class;
+    //-------------jpa-mybatis---------------//
+    Class<?> repositoryFactoryBeanClass() default MybatisJpaRepositoryFactoryBean.class;
 
-	String sqlSessionTemplateRef() default "sqlSessionTemplate";
+    String sqlSessionTemplateRef() default "sqlSessionTemplate";
 
     /**
      * Alias for the {@link #basePackages()} attribute. Allows for more concise annotation declarations e.g.:

@@ -1,6 +1,5 @@
 package com.mario6.springdata.jpa.mybatis.repository.support;
 
-import lombok.Setter;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;
 import org.springframework.data.repository.Repository;
@@ -12,7 +11,6 @@ import java.io.Serializable;
 public class MybatisJpaRepositoryFactoryBean<T extends Repository<S, ID>, S, ID extends Serializable>
         extends JpaRepositoryFactoryBean<T, S, ID> {
 
-    @Setter
     private SqlSessionTemplate sqlSessionTemplate;
 
     public MybatisJpaRepositoryFactoryBean(Class<? extends T> repositoryInterface) {
@@ -22,5 +20,9 @@ public class MybatisJpaRepositoryFactoryBean<T extends Repository<S, ID>, S, ID 
     @Override
     protected RepositoryFactorySupport createRepositoryFactory(EntityManager em) {
         return new MybatisJpaRepositoryFactory(em, sqlSessionTemplate);
+    }
+
+    public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate) {
+        this.sqlSessionTemplate = sqlSessionTemplate;
     }
 }

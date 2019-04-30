@@ -35,7 +35,7 @@ public class MybatisJpaRepositoryConfigExtension extends JpaRepositoryConfigExte
     private void postProcessMybatisJpa(BeanDefinitionBuilder builder, AnnotationRepositoryConfigurationSource config) {
         AnnotationAttributes attributes = config.getAttributes();
         String sqlSessionTemplate = attributes.getString("sqlSessionTemplateRef");
-        if(!StringUtils.hasText(sqlSessionTemplate)) {
+        if (!StringUtils.hasText(sqlSessionTemplate)) {
             sqlSessionTemplate = "sqlSessionTemplate";
         }
         builder.addPropertyReference("sqlSessionTemplate", sqlSessionTemplate);
