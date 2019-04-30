@@ -1,4 +1,4 @@
-package com.mario6.springdata.jpa.mybatis.repository;
+package com.github.lkqm.springdata.jpa.mybatis.repository;
 
 import org.springframework.data.annotation.QueryAnnotation;
 

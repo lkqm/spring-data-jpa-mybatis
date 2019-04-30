@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mario6.springdata.jpa.mybatis.repository.config;
+package com.github.lkqm.springdata.jpa.mybatis.repository.config;
 
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport;

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mario6.springdata.jpa.mybatis.repository.config;
+package com.github.lkqm.springdata.jpa.mybatis.repository.config;
 
-import com.mario6.springdata.jpa.mybatis.repository.support.MybatisJpaRepositoryFactoryBean;
+import com.github.lkqm.springdata.jpa.mybatis.repository.support.MybatisJpaRepositoryFactoryBean;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.repository.config.DefaultRepositoryBaseClass;

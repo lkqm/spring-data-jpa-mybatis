@@ -9,7 +9,7 @@
         <version>1.5.20.RELEASE</version>
     </parent>
 
-    <groupId>com.mario6</groupId>
+    <groupId>com.github.lkqm</groupId>
     <artifactId>spring-data-jpa-mybatis</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 

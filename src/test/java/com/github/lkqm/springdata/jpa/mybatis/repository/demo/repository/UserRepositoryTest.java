@@ -1,6 +1,6 @@
-package com.mario6.springdata.jpa.mybatis.repository.demo.repository;
+package com.github.lkqm.springdata.jpa.mybatis.repository.demo.repository;
 
-import com.mario6.springdata.jpa.mybatis.repository.demo.domain.User;
+import com.github.lkqm.springdata.jpa.mybatis.repository.demo.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

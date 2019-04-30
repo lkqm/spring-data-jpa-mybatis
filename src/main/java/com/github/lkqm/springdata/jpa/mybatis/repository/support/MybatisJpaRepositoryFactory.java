@@ -1,6 +1,6 @@
-package com.mario6.springdata.jpa.mybatis.repository.support;
+package com.github.lkqm.springdata.jpa.mybatis.repository.support;
 
-import com.mario6.springdata.jpa.mybatis.repository.query.MyBatisJpaQueryLookupStrategy;
+import com.github.lkqm.springdata.jpa.mybatis.repository.query.MyBatisJpaQueryLookupStrategy;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
 import org.springframework.data.repository.query.EvaluationContextProvider;

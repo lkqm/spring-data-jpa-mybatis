@@ -1,4 +1,4 @@
-package com.mario6.springdata.jpa.mybatis.repository.demo.domain;
+package com.github.lkqm.springdata.jpa.mybatis.repository.demo.domain;
 
 
 import javax.persistence.Entity;

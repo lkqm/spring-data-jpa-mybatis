@@ -1,4 +1,4 @@
-package com.mario6.springdata.jpa.mybatis.repository.query;
+package com.github.lkqm.springdata.jpa.mybatis.repository.query;
 
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.repository.core.RepositoryMetadata;

@@ -1,8 +1,8 @@
-package com.mario6.springdata.jpa.mybatis.repository.demo.repository;
+package com.github.lkqm.springdata.jpa.mybatis.repository.demo.repository;
 
 
-import com.mario6.springdata.jpa.mybatis.repository.MybatisQuery;
-import com.mario6.springdata.jpa.mybatis.repository.demo.domain.User;
+import com.github.lkqm.springdata.jpa.mybatis.repository.MybatisQuery;
+import com.github.lkqm.springdata.jpa.mybatis.repository.demo.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.data.repository.CrudRepository;

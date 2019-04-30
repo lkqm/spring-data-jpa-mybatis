@@ -1,6 +1,6 @@
-package com.mario6.springdata.jpa.mybatis.repository.query;
+package com.github.lkqm.springdata.jpa.mybatis.repository.query;
 
-import com.mario6.springdata.jpa.mybatis.repository.MybatisQuery;
+import com.github.lkqm.springdata.jpa.mybatis.repository.MybatisQuery;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.repository.core.NamedQueries;
