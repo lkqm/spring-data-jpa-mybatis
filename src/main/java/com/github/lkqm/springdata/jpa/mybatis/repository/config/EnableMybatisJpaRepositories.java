@@ -18,6 +18,7 @@ package com.github.lkqm.springdata.jpa.mybatis.repository.config;
 import com.github.lkqm.springdata.jpa.mybatis.repository.support.MybatisJpaRepositoryFactoryBean;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.repository.config.BootstrapMode;
 import org.springframework.data.repository.config.DefaultRepositoryBaseClass;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 import org.springframework.data.repository.query.QueryLookupStrategy.Key;
@@ -143,11 +144,26 @@ public @interface EnableMybatisJpaRepositories {
     boolean enableDefaultTransactions() default true;
 
     /**
+     * Configures when the repositories are initialized in the bootstrap lifecycle. {@link BootstrapMode#DEFAULT}
+     * (default) means eager initialization except all repository interfaces annotated with {@link Lazy},
+     * {@link BootstrapMode#LAZY} means lazy by default including injection of lazy-initialization proxies into client
+     * beans so that those can be instantiated but will only trigger the initialization upon first repository usage (i.e a
+     * method invocation on it). This means repositories can still be uninitialized when the application context has
+     * completed its bootstrap. {@link BootstrapMode#DEFERRED} is fundamentally the same as {@link BootstrapMode#LAZY},
+     * but triggers repository initialization when the application context finishes its bootstrap.
+     *
+     * @return
+     * @since 2.1
+     */
+    BootstrapMode bootstrapMode() default BootstrapMode.DEFAULT;
+
+    /**
      * Configures what character is used to escape the wildcards {@literal _} and {@literal %} in derived queries with
      * {@literal contains}, {@literal startsWith} or {@literal endsWith} clauses.
      *
      * @return a single character used for escaping.
      */
     char escapeCharacter() default '\\';
+
 
 }
