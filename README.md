@@ -14,15 +14,15 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 1. 添加依赖
     ```xml
     <dependency>
-        <groupId>com.mario6</groupId>
+        <groupId>com.github.lkqm</groupId>
         <artifactId>spring-data-jpa-mybatis</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${version}</version>
     </dependency>
     ```
 
 2. 配置application.properties
     ```properties
-    spring.datasource.url=jdbc:h2:mem:spring-data-jpa-mybatis?DB_CLOSE_ON_EXIT=TRUE
+    spring.datasource.url=jdbc:h2:mem:spring-data-jpa-mybatis;DB_CLOSE_ON_EXIT=TRUE
     spring.jpa.show-sql=true
     spring.jpa.format-sql=true
     # mybatis
