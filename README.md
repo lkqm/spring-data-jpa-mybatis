@@ -1,6 +1,6 @@
 # spring-data-jpa-mybatis
-![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.github.lkqm/spring-data-jpa-mybatis/1)
-![Travis (.org) branch](https://img.shields.io/travis/lkqm/spring-data-jpa-mybatis/1.x)
+![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.github.lkqm/spring-data-jpa-mybatis/2)
+![Travis (.org) branch](https://img.shields.io/travis/lkqm/spring-data-jpa-mybatis/master)
 
 集成spring-data-jpa和mybatis
 
