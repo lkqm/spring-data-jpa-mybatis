@@ -1,8 +1,5 @@
 # spring-data-jpa-mybatis
-![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.github.lkqm/spring-data-jpa-mybatis/2)
-![Travis (.org) branch](https://img.shields.io/travis/lkqm/spring-data-jpa-mybatis/master)
-
-集成spring-data-jpa和mybatis
+集成spring-data-jpa和mybatis，支持在同一个接口中定义方法.
 
 ```java
 public interface UserRepository extends JpaRepository<User, Integer> {
@@ -19,7 +16,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     <dependency>
         <groupId>com.github.lkqm</groupId>
         <artifactId>spring-data-jpa-mybatis</artifactId>
-        <version>${version}</version>
+        <version>2.1.0</version>
     </dependency>
     ```
 
