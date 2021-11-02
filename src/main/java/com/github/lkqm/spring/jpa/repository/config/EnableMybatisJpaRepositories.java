@@ -13,19 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.lkqm.springdata.jpa.mybatis.repository.config;
+package com.github.lkqm.spring.jpa.repository.config;
 
-import com.github.lkqm.springdata.jpa.mybatis.repository.support.MybatisJpaRepositoryFactoryBean;
+import com.github.lkqm.spring.jpa.repository.support.MybatisJpaRepositoryFactoryBean;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import javax.persistence.EntityManagerFactory;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.repository.config.BootstrapMode;
 import org.springframework.data.repository.config.DefaultRepositoryBaseClass;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 import org.springframework.data.repository.query.QueryLookupStrategy.Key;
 import org.springframework.transaction.PlatformTransactionManager;
-
-import javax.persistence.EntityManagerFactory;
-import java.lang.annotation.*;
 
 /**
  * Annotation to enable JPA repositories. Will scan the package of the annotated configuration class for Spring Data
@@ -164,6 +169,5 @@ public @interface EnableMybatisJpaRepositories {
      * @return a single character used for escaping.
      */
     char escapeCharacter() default '\\';
-
 
 }

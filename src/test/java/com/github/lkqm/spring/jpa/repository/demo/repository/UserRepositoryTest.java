@@ -1,16 +1,15 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.demo.repository;
+package com.github.lkqm.spring.jpa.repository.demo.repository;
 
-import com.github.lkqm.springdata.jpa.mybatis.repository.demo.domain.User;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import com.github.lkqm.spring.jpa.repository.demo.domain.User;
+import java.util.Date;
+import javax.annotation.Resource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.annotation.Resource;
-import java.util.Date;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 
 @RunWith(SpringRunner.class)
@@ -36,6 +35,7 @@ public class UserRepositoryTest {
     @Test
     public void insert() {
         User user = new User();
+        user.setId(1);
         user.setAccount("luokaiqiongmou@foxmail.com");
         user.setPassword("998");
         user.setName("罗开");

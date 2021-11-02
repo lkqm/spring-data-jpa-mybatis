@@ -1,10 +1,9 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.query;
+package com.github.lkqm.spring.jpa.repository.query;
 
+import java.lang.reflect.Method;
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.repository.core.RepositoryMetadata;
 import org.springframework.data.repository.query.QueryMethod;
-
-import java.lang.reflect.Method;
 
 /**
  * 查询方法的抽象

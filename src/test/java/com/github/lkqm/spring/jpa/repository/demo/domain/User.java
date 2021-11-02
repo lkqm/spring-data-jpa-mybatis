@@ -1,11 +1,11 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.demo.domain;
+package com.github.lkqm.spring.jpa.repository.demo.domain;
 
 
+import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 用户

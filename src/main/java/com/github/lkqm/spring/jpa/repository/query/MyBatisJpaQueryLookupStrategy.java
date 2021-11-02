@@ -1,6 +1,7 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.query;
+package com.github.lkqm.spring.jpa.repository.query;
 
-import com.github.lkqm.springdata.jpa.mybatis.repository.MybatisQuery;
+import com.github.lkqm.spring.jpa.repository.MybatisQuery;
+import java.lang.reflect.Method;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.repository.core.NamedQueries;
@@ -8,8 +9,6 @@ import org.springframework.data.repository.core.RepositoryMetadata;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 import org.springframework.data.repository.query.RepositoryQuery;
 import org.springframework.util.Assert;
-
-import java.lang.reflect.Method;
 
 
 public class MyBatisJpaQueryLookupStrategy implements QueryLookupStrategy {

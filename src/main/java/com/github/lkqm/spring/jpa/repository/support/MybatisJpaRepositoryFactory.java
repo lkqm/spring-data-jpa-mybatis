@@ -1,14 +1,13 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.support;
+package com.github.lkqm.spring.jpa.repository.support;
 
-import com.github.lkqm.springdata.jpa.mybatis.repository.query.MyBatisJpaQueryLookupStrategy;
+import com.github.lkqm.spring.jpa.repository.query.MyBatisJpaQueryLookupStrategy;
+import java.util.Optional;
+import javax.persistence.EntityManager;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 import org.springframework.data.repository.query.QueryMethodEvaluationContextProvider;
 import org.springframework.util.Assert;
-
-import javax.persistence.EntityManager;
-import java.util.Optional;
 
 public class MybatisJpaRepositoryFactory extends JpaRepositoryFactory {
 

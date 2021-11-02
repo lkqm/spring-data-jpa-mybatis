@@ -1,12 +1,11 @@
-package com.github.lkqm.springdata.jpa.mybatis.repository.query;
+package com.github.lkqm.spring.jpa.repository.query;
 
+import java.lang.reflect.Method;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.data.repository.query.QueryMethod;
 import org.springframework.data.repository.query.RepositoryQuery;
 import org.springframework.util.Assert;
 import org.springframework.util.ReflectionUtils;
-
-import java.lang.reflect.Method;
 
 /**
  * Mybatis的查询逻辑

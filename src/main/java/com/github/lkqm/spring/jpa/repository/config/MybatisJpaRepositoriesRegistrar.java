@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.lkqm.springdata.jpa.mybatis.repository.config;
+package com.github.lkqm.spring.jpa.repository.config;
 
+import java.lang.annotation.Annotation;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport;
 import org.springframework.data.repository.config.RepositoryConfigurationExtension;
-
-import java.lang.annotation.Annotation;
 
 /**
  * {@link ImportBeanDefinitionRegistrar} to enable {@link EnableMybatisJpaRepositories} annotation.
